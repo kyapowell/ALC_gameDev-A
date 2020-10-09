@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2370416491960180731}
   - component: {fileID: 2370416491963532009}
   - component: {fileID: 2370416491962478715}
-  - component: {fileID: 6442252026055717411}
   - component: {fileID: 6657299784013025228}
   - component: {fileID: 6283925174853540360}
+  - component: {fileID: 7004828666794182655}
   m_Layer: 0
   m_Name: Food_Steak_01
   m_TagString: Untagged
@@ -84,18 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6442252026055717411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2370416491960244791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8eff0aac9d0d54431b068ab0624438f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &6657299784013025228
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -125,3 +113,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7004828666794182655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2370416491960244791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad51cab90fd424a1184f63671daf23ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topBounds: 35
+  lowerBounds: -15

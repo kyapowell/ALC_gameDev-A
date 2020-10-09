@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveForward : MonoBehaviour
-public float speed = 10;
-
 {
+    public float speed = 10f;
+    
     // Start is called before the first frame update
     void Start()
     {
