@@ -39,7 +39,7 @@ public class playerController : MonoBehaviour
 //launches food
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            Instantiate(foodProjectile, transform.position, foodProjectile.transform.rotation);
         }
     }
 }
