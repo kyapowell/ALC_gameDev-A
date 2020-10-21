@@ -780,6 +780,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalInput: 0
   speed: 10
-  xRange: 10
+  xRange: 17
   foodProjectile: {fileID: 2370416491960244791, guid: cb9590b08ff46432fb33e35ddc997364, type: 3}
   projectilePrefab: {fileID: 2370416491960244791, guid: cb9590b08ff46432fb33e35ddc997364, type: 3}
