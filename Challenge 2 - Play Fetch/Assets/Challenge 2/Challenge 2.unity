@@ -350,6 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 258411858}
   - component: {fileID: 258411859}
+  - component: {fileID: 258411860}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -447,6 +448,20 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.46910107, y: 0.0000017285347, z: 0.01634258}
     m_Extent: {x: 1.5143186, y: 1.6845057, z: 0.55129623}
   m_DirtyAABB: 0
+--- !u!114 &258411860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258411857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d96ad106bd784549a370bbfd1f8b697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dogPrefab: {fileID: 8241448880393145375, guid: 3e5fe95e580114a5f8f8348678e77463,
+    type: 3}
 --- !u!850595691 &296473742
 LightingSettings:
   m_ObjectHideFlags: 0
