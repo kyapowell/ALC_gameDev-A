@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 737912706769806563}
   - component: {fileID: 737912706413620403}
-  - component: {fileID: 5774440515234765682}
   - component: {fileID: 8785184928362509494}
   - component: {fileID: -4301994346482798475}
   m_Layer: 0
@@ -47,19 +46,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9e4d9a34e8114c1284e1401014b2ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5774440515234765682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737912706770106563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef00fe3a6109f49e3968c5ed1d571e07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 737912706770106563}
 --- !u!54 &8785184928362509494
 Rigidbody:
   m_ObjectHideFlags: 0
