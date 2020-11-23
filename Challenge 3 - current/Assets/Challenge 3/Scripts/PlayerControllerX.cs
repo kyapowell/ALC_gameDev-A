@@ -8,6 +8,7 @@ public class PlayerControllerX : MonoBehaviour
 
     public float floatForce;
     private float gravityModifier = 1.5f;
+    public float yRange = 13;
     private Rigidbody playerRb;
 
     public ParticleSystem explosionParticle;
@@ -41,7 +42,10 @@ public class PlayerControllerX : MonoBehaviour
         {
             playerRb.AddForce(Vector3.up * floatForce);
         }
-
+        if (transform.position.y > yRange)
+        {
+            transform.position = new Vector3(transform.position.x, yRange, transform.position.z);
+        }
         if (transform.position.y > 13)
         {
             isLowEnough = false;

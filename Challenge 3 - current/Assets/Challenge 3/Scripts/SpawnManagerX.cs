@@ -21,7 +21,7 @@ public class SpawnManagerX : MonoBehaviour
     void SpawnObjects ()
     {
         // Set random spawn location and random object index
-        Vector3 spawnLocation = new Vector3(30, Random.Range(5, 15), 0);
+        Vector3 spawnLocation = new Vector3(30, Random.Range(5, 12), 0);
         int index = Random.Range(0, objectPrefabs.Length);
 
         // If game is still active, spawn new object
