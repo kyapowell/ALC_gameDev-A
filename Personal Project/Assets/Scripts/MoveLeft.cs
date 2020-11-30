@@ -18,7 +18,8 @@ public class MoveLeft : MonoBehaviour
     void Update()
     {
        //if game not over move left
-       if (! playerControllerScript.gameOver)
+    
+       if (playerControllerScript.gameOver == false)
        {
            transform.Translate(Vector3.left * speed * Time.deltaTime, Space.World);
        } 
@@ -28,5 +29,6 @@ public class MoveLeft : MonoBehaviour
        {
            Destroy(gameObject);
        }
+
     }
 }

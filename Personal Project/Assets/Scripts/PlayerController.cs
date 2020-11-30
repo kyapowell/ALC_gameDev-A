@@ -26,5 +26,15 @@ public class PlayerController : MonoBehaviour
         {
             playerRb.AddForce(Vector3.up * floatForce);
         }
+        if(transform.position.y < 0)
+        {
+            gameOver = true;
+        }
+
+        if(gameOver == true)
+        {
+            Debug.Log("Game Over!");
+        }
+        
     }
 }
