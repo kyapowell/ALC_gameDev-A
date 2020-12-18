@@ -8,13 +8,11 @@ public class PlayerControllerX : MonoBehaviour
     private float speed = 500;
     private GameObject focalPoint;
     private float turboBoost = 10;
+    public ParticleSystem turboSmoke;
 
     public bool hasPowerup;
     public GameObject powerupIndicator;
     public int powerUpDuration = 5;
-
-    public ParticleSystem turboSmoke;
-    
 
     private float normalStrength = 10; // how hard to hit enemy without powerup
     private float powerupStrength = 25; // how hard to hit enemy with powerup
@@ -22,6 +20,7 @@ public class PlayerControllerX : MonoBehaviour
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
+        turboSmoke = GetComponentInChildren<ParticleSystem>();
         focalPoint = GameObject.Find("Focal Point");
     }
 
@@ -49,6 +48,7 @@ public class PlayerControllerX : MonoBehaviour
             Destroy(other.gameObject);
             hasPowerup = true;
             powerupIndicator.SetActive(true);
+
             StartCoroutine(PowerupCooldown());
         }
     }
