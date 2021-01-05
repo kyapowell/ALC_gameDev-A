@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveLeft : MonoBehaviour
 {
-    public float speed;
+    public float speed = 10;
     private PlayerController playerControllerScript;
     private float leftBound = -10;
 
@@ -21,7 +21,7 @@ public class MoveLeft : MonoBehaviour
     
        if (playerControllerScript.gameOver == false)
        {
-           transform.Translate(Vector3.left * speed * Time.deltaTime, Space.World);
+           transform.Translate(Vector3.left * Time.deltaTime * speed);
        } 
 
        //if object goes offscreen destroy it
