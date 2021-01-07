@@ -10,6 +10,8 @@ public class SpawnManager : MonoBehaviour
     public float spawnPosZ = 10;
     public float spawnPosY = 7;
 
+    private PlayerController playerControllerScript;
+
     private float startDelay = 2;
     private float spawnInterval = 1.5f;
 
@@ -17,6 +19,7 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         InvokeRepeating("SpawnRand", startDelay, spawnInterval);
+        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -27,9 +30,14 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnRand()
     {
-        Vector3 spawnPos = new Vector3(spawnRangeX, Random.Range(0, spawnPosY), spawnPosZ);
+        if (playerControllerScript.gameOver == false)
+        {
+            Vector3 spawnPos = new Vector3(spawnRangeX, Random.Range(0, spawnPosY), spawnPosZ);
 
-        int animalIndex = Random.Range(0, animalPrefabs.Length);
-        Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
+            int animalIndex = Random.Range(0, animalPrefabs.Length);
+            Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);  
+        }
+
+        
     }
 }
